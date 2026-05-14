@@ -2,19 +2,15 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-# Cabeçalho do aplicativo
 st.header('Análise de Dados de Veículos')
 
-# Ler o arquivo CSV local
 car_data = pd.read_csv('vehicles.csv')
 
 st.write('Abaixo você pode ver os primeiros dados do arquivo:')
 st.dataframe(car_data.head())
 
-# --- BOTÕES INTERATIVOS ---
 st.subheader('Visualizações por Botões')
 
-# Botão para o Histograma
 hist_button = st.button('Criar histograma')
 
 if hist_button:
@@ -23,7 +19,6 @@ if hist_button:
                        labels={"odometer": "Hodômetro", "count": "Contagem"})
     st.plotly_chart(fig, use_container_width=True)
 
-# Botão para o Gráfico de Dispersão
 scatter_button = st.button('Criar gráfico de dispersão')
 
 if scatter_button:
@@ -33,7 +28,6 @@ if scatter_button:
     st.plotly_chart(fig, use_container_width=True)
 
 
-# --- CAIXAS DE SELEÇÃO (Desafio Extra) ---
 st.subheader('Visualizações por Caixas de Seleção')
 
 build_histogram = st.checkbox('Exibir Histograma')

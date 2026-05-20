@@ -15,6 +15,8 @@ Este projeto consiste no desenvolvimento de uma aplicação web interativa para 
 * **Visualização de Dados:** Exibição do conjunto de dados estruturado (`vehicles.csv`).
 * **Análise de Quilometragem:** Gráfico interativo (Histograma) dinâmico acionado pelo utilizador.
 * **Análise de Preços:** Gráfico de dispersão (Preço vs. Quilometragem) para identificar correlações de mercado.
+* <img width="773" height="416" alt="image" src="https://github.com/user-attachments/assets/cbbc5f94-11f6-4a42-ad0d-55ab8423316b" />
+
 * **Filtros Dinâmicos:** Caixas de seleção inteligentes (`st.checkbox`) para customizar a visualização.
 
 ## 📊 Insights Práticos do Projeto
